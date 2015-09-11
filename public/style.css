@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #17212E;
+  color: #333;
+  font-kerning: normal;
+  font-size: 100%;
+  margin: 0;
+}
+
+.card {
+  background: #fff;
+  border-radius: 3px;
+  margin: 2rem auto;
+  max-width: 600px;
+  padding: 3rem;
+}
+
+.card__title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  color: #555;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 0.25rem;
+}
+
+.form-input {
+  font-family: inherit;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.button {
+  background: #FA693C;
+  border: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: 3px;
+  padding: 1rem;
+  width: 100%;
+  -webkit-appearance: none;
+}
+

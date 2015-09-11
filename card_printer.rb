@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'slim'
 
 settings = {
   :token => '',
@@ -7,7 +6,7 @@ settings = {
 }
 
 get '/' do
- slim :index
+  erb :index 
 end
 
 post '/' do
@@ -22,7 +21,4 @@ post '/' do
 
   `pivotal_to_pdf story #{@story_ids}`
   send_file 'stories.pdf'
-  `rm stories.pdf`
-
-  slim :index
 end
