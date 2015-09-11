@@ -1,0 +1,12 @@
+- if @printed == true
+  h3[id="tagline" class="small tagline"] Printed: Project_ID = #{@project_id}, Story_IDs = #{@story_ids} 
+
+
+
+form action="/" method="POST"
+    ul
+      label="Project ID"
+      li: input type="text" name="project_id" 
+      label="Story IDs"
+      li: input type="text" name="story_ids" size="100"
+      li: input.button type="submit" value="Print"
