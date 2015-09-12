@@ -43,6 +43,7 @@ GEM
     rack-protection (1.5.3)
       rack
     rainbow (2.0.0)
+    rake (10.4.2)
     rspec (3.3.0)
       rspec-core (~> 3.3.0)
       rspec-expectations (~> 3.3.0)
@@ -78,6 +79,7 @@ PLATFORMS
 DEPENDENCIES
   httparty
   pivotal_to_pdf
+  rake
   rspec
   shotgun
   sinatra
