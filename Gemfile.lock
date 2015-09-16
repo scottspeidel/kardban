@@ -69,6 +69,8 @@ GEM
       ruby-openid (>= 2.1.8)
     rack-protection (1.5.3)
       rack
+    rack-test (0.6.3)
+      rack (>= 1.0)
     rainbow (2.0.0)
     rake (10.4.2)
     rspec (3.3.0)
@@ -109,6 +111,7 @@ DEPENDENCIES
   omniauth-github
   omniauth-openid
   pivotal_to_pdf
+  rack-test
   rake
   rspec
   shotgun

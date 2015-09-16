@@ -11,6 +11,7 @@ group :development do
 end
 
 group :test do
+  gem 'rack-test'
   gem 'rspec'
   gem 'vcr'
   gem 'rake'

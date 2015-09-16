@@ -1,4 +1,12 @@
+require 'rack/test'
+require 'rspec'
 require 'vcr'
+
+require File.expand_path '../../app.rb', __FILE__
+
+ENV['RACK_ENV'] = 'test'
+
+OmniAuth.config.test_mode = true
 
 real_requests = ENV['REAL_REQUESTS']
 
