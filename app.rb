@@ -8,8 +8,10 @@ require 'lib/pivotal_to_pdf_settings.rb'
 
 class Kardban < Sinatra::Application
   enable :sessions
+  set :session_secret, 'MyDad5Got@KillerSet0fT00lzzzz'
 
   use Rack::Session::Cookie
+
   use OmniAuth::Builder do
     provider :github, ENV['GITHUB_KEY'], ENV['GITHUB_SECRET']
     provider :openid, :store => OpenID::Store::Filesystem.new("#{Dir.pwd}/tmp")
