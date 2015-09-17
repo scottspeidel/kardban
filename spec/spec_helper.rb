@@ -1,8 +1,10 @@
 require 'rack/test'
 require 'rspec'
 require 'vcr'
-
 require File.expand_path '../../app.rb', __FILE__
+
+require 'coveralls'
+Coveralls.wear!
 
 ENV['RACK_ENV'] = 'test'
 

@@ -1,4 +1,4 @@
 *.pdf
 spec/support
 settings.yml
-
+coverage
